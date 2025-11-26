@@ -9474,7 +9474,7 @@ a.text-dark:focus {
 .btn.btn-primary.focus,
 .btn.btn-primary:hover {
     color: #fff;
-    background-color: #9124a3;
+    background-color: #91B536;
     border-color: #701c7e;
 }
 
@@ -11301,7 +11301,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
     background-color: #91B536;
     border-radius: 0.7rem;
     color: black;
-    font-weight: bold;
+
 
 }
 
@@ -11579,7 +11579,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 
 .form-check .form-check-input:checked+.form-check-sign .check {
-    background: #9c27b0;
+    background: #91B536;
 }
 
 .form-check .form-check-input:checked+.form-check-sign .check:before {
@@ -12059,7 +12059,7 @@ fieldset[disabled] .is-focused .switch label:focus {
 }
 
 .form-control:invalid {
-    background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+    background-image: linear-gradient(to top, #91B536 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 
 .form-control:read-only {
@@ -17031,12 +17031,12 @@ legend {
 }
 
 a {
-    color: #9c27b0;
+    color: #91B536;
 }
 
 a:hover,
 a:focus {
-    color: #89229b;
+    color: #91B536;
     text-decoration: none;
 }
 
