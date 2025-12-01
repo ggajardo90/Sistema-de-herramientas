@@ -5,8 +5,7 @@
       Tip 2: you can also add an image using data-image tag
   -->
   <div class="logo">
-    <a href="https://creative-tim.com/" class="simple-text logo-normal">
-      {{ __('Creative Tim') }}
+    <a> <img class="logo" src="{{ asset('/img/Logo_Switch.png') }}"alt="">
     </a>
   </div>
   <div class="sidebar-wrapper">
@@ -17,43 +16,43 @@
             <p>{{ __('Dashboard') }}</p>
         </a>
       </li>
-      <li class="nav-item {{ ($activePage == 'profile' || $activePage == 'user-management') ? ' active' : '' }}">
+      {{-- <li class="nav-item {{ ($activePage == 'profile' || $activePage == 'user-management') ? ' active' : '' }}">
         <a class="nav-link" data-toggle="collapse" href="#laravelExample" aria-expanded="true">
           <i><img style="width:25px" src="{{ asset('/img/laravel.svg') }}"></i>
           <p>{{ __('Laravel Examples') }}
             <b class="caret"></b>
           </p>
-        </a>
+        </a> --}}
         <div class="collapse show" id="laravelExample">
           <ul class="nav">
-            <li class="nav-item{{ $activePage == 'profile' ? ' active' : '' }}">
-              <a class="nav-link" href="#">
-                <span class="sidebar-mini"> UP </span>
-                <span class="sidebar-normal">{{ __('User profile') }} </span>
+            <li class="nav-item{{ $activePage == 'users' ? ' active' : '' }}">
+              <a class="nav-link" href="{{ route('users.create') }}">
+                <span class="sidebar-mini"></span>
+                <span class="sidebar-normal">{{ __('Nuevo Usuario') }} </span>
               </a>
             </li>
-            <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
+            {{-- <li class="nav-item{{ $activePage == 'user-management' ? ' active' : '' }}">
               <a class="nav-link" href="#">
                 <span class="sidebar-mini"> UM </span>
                 <span class="sidebar-normal"> {{ __('User Management') }} </span>
               </a>
-            </li>
+            </li> --}}
           </ul>
         </div>
       </li>
-      <li class="nav-item{{ $activePage == 'table' ? ' active' : '' }}">
+      {{-- <li class="nav-item{{ $activePage == 'table' ? ' active' : '' }}">
         <a class="nav-link" href="#">
           <i class="material-icons">content_paste</i>
             <p>{{ __('Table List') }}</p>
         </a>
-      </li>
-      <li class="nav-item{{ $activePage == 'typography' ? ' active' : '' }}">
+      </li> --}}
+      {{-- <li class="nav-item{{ $activePage == 'typography' ? ' active' : '' }}">
         <a class="nav-link" href="#">
           <i class="material-icons">library_books</i>
             <p>{{ __('Typography') }}</p>
         </a>
-      </li>
-      <li class="nav-item{{ $activePage == 'icons' ? ' active' : '' }}">
+      </li> --}}
+      {{-- <li class="nav-item{{ $activePage == 'icons' ? ' active' : '' }}">
         <a class="nav-link" href="#">
           <i class="material-icons">bubble_chart</i>
           <p>{{ __('Icons') }}</p>
@@ -70,13 +69,13 @@
           <i class="material-icons">notifications</i>
           <p>{{ __('Notifications') }}</p>
         </a>
-      </li>
-      <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
+      </li> --}}
+      {{-- <li class="nav-item{{ $activePage == 'language' ? ' active' : '' }}">
         <a class="nav-link" href="#">
           <i class="material-icons">language</i>
           <p>{{ __('RTL Support') }}</p>
         </a>
-      </li>
+      </li> --}}
     </ul>
   </div>
 </div>
